@@ -1,0 +1,59 @@
+@import './base.css';
+
+#app {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(93 73 205);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsl(266deg 28.41% 32% / 20%);
+    color: rgb(141, 93, 231);
+  }
+}
+
+@media (min-width: 1024px) {
+  /*body {
+    display: flex;
+    place-items: center;
+  }*/
+
+  #app {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;*/
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-weight: normal;
+  }
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.no-click {
+  cursor: default !important;
+}
+
+a {
+  cursor: pointer;
+}
+
